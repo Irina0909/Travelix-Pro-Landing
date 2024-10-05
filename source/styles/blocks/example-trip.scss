@@ -50,19 +50,19 @@
 }
 
 .example-trip__stars {
-  margin: 0;
+  margin: 3px 0 0;
   grid-column: 1/2;
+  width: 70px;
 
   &::before {
     background-image: url("../../icons/stack.svg#booking-example-tour-star");
     content: "";
     display: inline-block;
     fill: $accent-color-2;
-    width: 13px;
+    width: 80px;
     height: 12px;
-    background-size: 100%;
+    background-size: 20%;
     background-repeat: space no-repeat;
-    background-position: center;
   }
 }
 

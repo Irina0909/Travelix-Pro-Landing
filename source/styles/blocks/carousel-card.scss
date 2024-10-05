@@ -57,17 +57,18 @@
 
 .carousel-card__stars {
   grid-column: 1/2;
+  grid-row: 4/5;
   margin: 3px 0 0;
 
-  &::before {
+    &::before {
     background-image: url("../../icons/stack.svg#slider-star");
     content: "";
     display: inline-block;
-    fill: $accent-color-2;
-    width: 17px;
-    height: 18px;
-    background-size: contain;
+    fill: $accent-color-text;
+    width: 100px;
+    height: 16px;
     background-repeat: space no-repeat;
+    background-size: 20%;
   }
 }
 
