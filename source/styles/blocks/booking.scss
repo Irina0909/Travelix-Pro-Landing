@@ -1,0 +1,130 @@
+.booking {
+  position: relative;
+  padding-bottom: 70px;
+
+  &::before {
+    background-image: url("../../icons/stack.svg#booking-semicircle");
+    position: absolute;
+    fill: $accent-bg;
+    display: inline-block;
+    content: "";
+    width: 108px;
+    height: 254px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    left: 0;
+    top: -183px;
+  }
+}
+
+.booking__container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.booking__content {
+  //
+}
+
+.booking__resume {
+  line-height: 26px;
+  color: $secondary-color-text;
+  margin: 0 0 14px;
+}
+
+.booking__title {
+  margin: 0 0 14px;
+}
+
+.booking__subtitle {
+  max-width: 545px;
+  margin: 0 0 34px;
+}
+
+.booking__list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.booking__item {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: auto auto;
+  column-gap: 40px;
+  grid-row-gap: 12px;
+
+  &:not(:last-child) {
+    margin-bottom: 24px;
+  }
+
+  &::before {
+    display: inline-block;
+    content: "";
+    width: 60px;
+    height: 60px;
+    background-repeat: no-repeat;
+    background-size: auto;
+    align-self: center;
+  }
+}
+
+.booking__item--choosing::before {
+  background-image: url("../../icons/booking-destination.svg");
+  color: #ea880f;
+}
+
+.booking__item--paying::before {
+  background-image: url("../../icons/booking-payment.svg");
+  color: #3793d8;
+}
+
+.booking__item--traveling::before {
+  background-image: url("../../icons/booking-select-date.svg");
+  color: #0600ae;
+}
+
+.booking__item-title {
+  margin: 0 0 10px;
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+
+.booking__item-subtitle {
+  max-width: 470px;
+  grid-column: 2/3;
+  grid-row: 2/3;
+  margin: 0;
+}
+
+.booking__picture {
+  width: 558px;
+  height: 498px;
+  object-fit: contain;
+  margin: 33px 0 0;
+
+  ::after {
+    background-image: url("../../icons/stack.svg#booking-dots");
+    position: absolute;
+    fill: rgba(196, 196, 196, 0.3);
+    display: inline-block;
+    content: "";
+    width: 205px;
+    height: 63px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    bottom: 23%;
+    right: 0;
+  }
+}
+
+.booking__image {
+  display: block;
+}
+
+.booking__examples {
+  position: absolute;
+  top: -6px;
+  right: 138px;
+}

@@ -1,0 +1,72 @@
+.services-card {
+  border-radius: 24px;
+  background-color: $secondary-bg-2;
+  padding: 32px 22px;
+  display: flex;
+  flex-direction: column;
+
+  &::before {
+    content: "";
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-size: auto;
+    width: 70px;
+    height: 70px;
+    margin: 4px auto 23px;
+  }
+
+  &:hover {
+    box-shadow: 0 2px 20px 4px #d8d8d8;
+    transition: 3s;
+  }
+}
+
+.services-card__title {
+  text-decoration: none;
+  text-align: center;
+  margin: 0 auto 18px;
+  display: block;
+}
+
+.services-card__text {
+  max-width: 232px;
+  text-align: center;
+  font-size: 14px;
+  line-height: 24px;
+  margin: 0 0 29px -7px;
+}
+
+.services-card--hotel::before {
+  background-image: url("../../icons/services-hotel.svg");
+  color: $secondary-color-text-2;
+}
+
+.services-card--taxi::before {
+  background-image: url("../../icons/services-taxi.svg");
+  color: #219653;
+}
+
+.services-card--plane::before {
+  background-image: url("../../icons/services-plane.svg");
+  color: #eeaa2b;
+}
+
+.services-card--tour::before {
+  background-image: url("../../icons/services-tour.svg");
+  color: #0600ae;
+}
+
+.services-card__button {
+  text-decoration: none;
+  margin: 0 auto;
+  padding: 12px 37px;
+}
+
+.services-card__button--current {
+  background-color: $accent-bg;
+  color: $secondary-color-text-2;
+}
+
+.services-card--current {
+  box-shadow: 0 2px 20px 4px #d8d8d8;
+}

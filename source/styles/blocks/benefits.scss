@@ -1,0 +1,86 @@
+.benefits__container {
+  display: flex;
+  justify-content: start;
+}
+
+.benefits__picture {
+  width: 705px;
+  height: 631px;
+  object-fit: contain;
+  margin-left: -135px;
+  margin-right: 35px;
+}
+
+.benefits__image {
+  display: block;
+}
+
+.benefits__title {
+  margin: 0 0 14px;
+  padding: 0;
+}
+
+.benefits__subtitle {
+  max-width: 569px;
+  margin: 0 0 47px;
+}
+
+.benefits__list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.benefits__item {
+  margin-bottom: 30px;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: min-content 1fr;
+  column-gap: 31px;
+  padding-top: 12px;
+
+  &::before {
+    display: inline-block;
+    content: "";
+    width: 70px;
+    height: 70px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    grid-column: 1/2;
+    grid-row: 1/3;
+  }
+}
+
+.benefits__item-title {
+  margin: -6px 0 0;
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+
+.benefits__item-text {
+  margin: 0;
+  max-width: 299px;
+  line-height: 26px;
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+
+.benefits__item--comfortable::before {
+  background-image: url("../../icons/stack.svg#benefits-car");
+  fill: $secondary-color-text-2;
+}
+
+.benefits__item--supportive::before {
+  background-image: url("../../icons/stack.svg#benefits-support");
+  fill: #3793d8;
+}
+
+.benefits__item--discounted::before {
+  background-image: url("../../icons/stack.svg#benefits-discount");
+  fill: #eb5757;
+}
+
+.benefits__item--sightseeing::before {
+  background-image: url("../../icons/stack.svg#benefits-guide");
+  fill: #eeaa2b;
+}

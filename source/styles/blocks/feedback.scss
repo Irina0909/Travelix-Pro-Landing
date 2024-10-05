@@ -1,0 +1,52 @@
+.feedback {
+  padding: 50px 0 220px;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: inline-block;
+    background-color: #f6c01e;
+    width: 370px;
+    height: 370px;
+    border-radius: 50%;
+    top: 50%;
+    left: 19%;
+    z-index: -1;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: inline-block;
+    background-color: $accent-bg;
+    width: 154px;
+    height: 154px;
+    z-index: -1;
+    top: 20%;
+    left: 5%;
+    border-radius: 50%;
+  }
+}
+
+.feedback__resume {
+  line-height: 26px;
+  color: $secondary-color-text;
+  text-align: center;
+  margin: 0 0 8px -45px;
+}
+
+.feedback__title {
+  text-align: center;
+  margin: 0 0 16px -53px;
+}
+
+.feedback__subtitle {
+  text-align: center;
+  max-width: 865px;
+  margin: 0 auto 40px;
+}

@@ -1,0 +1,88 @@
+.footer {
+  background-image: url("../../images/footer-bg@1x.jpg");
+  background-repeat: no-repeat;
+  background-size: 1440px auto, cover;
+  background-position: center bottom, center;
+  padding: 50px 0 20px;
+  background-color: $accent-bg;
+}
+
+.footer__info {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 106px;
+  margin-bottom: 42px;
+}
+
+.footer__logo {
+  & :hover {
+    opacity: 0.7;
+    transition: 2s;
+  }
+
+  & :active {
+    opacity: 0.5;
+  }
+}
+
+.footer__logo-image {
+  margin: 0 0 17px;
+  width: 207px;
+  height: 52px;
+  display: block;
+}
+
+.footer__text {
+  font-size: 16px;
+  line-height: 26px;
+  color: $secondary-color-text-2;
+  max-width: 297px;
+  margin: 0;
+}
+
+.footer__copyright {
+  font-size: 16px;
+  line-height: 26px;
+  color: $secondary-color-text-2;
+  text-align: center;
+  margin: 0;
+  padding: 17px 0 0;
+  position: relative;
+
+  &::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 7%;
+    width: 87%;
+    height: 1px;
+    background-color: $primary-bg;
+  }
+}
+
+.scroll-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 70px;
+  background-color: $primary-bg;
+  color: $accent-color-text;
+  text-align: center;
+  padding: 15px 25px;
+  text-decoration: none;
+  font-size: 18px;
+  border-radius: 5px;
+  box-shadow: 0 4px #d8e66a;
+  transition: all 0.3s ease;
+  font-weight: 700;
+  border: 1px solid $accent-color-text;
+
+  &:active {
+    box-shadow: 0 2px #e4e460;
+    transform: translateY(2px);
+  }
+
+  &:hover {
+    background-color: #ebaa39;
+  }
+}

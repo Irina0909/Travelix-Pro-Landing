@@ -1,0 +1,88 @@
+.carousel-card {
+  display: grid;
+  grid-template-columns: 170px 100px;
+  grid-template-rows: auto auto auto auto auto;
+  grid-row-gap: 17px;
+  position: relative;
+}
+
+.carousel-card__link-image {
+  display: block;
+  text-decoration: none;
+  grid-column: 1/3;
+}
+
+.carousel-card__img {
+  display: block;
+}
+
+.carousel-card__title {
+  text-decoration: none;
+  display: block;
+  grid-column: 1/2;
+
+  &:hover {
+    opacity: 0.5;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+  }
+}
+
+.carousel-card__price {
+  font-family: $secondary-font;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 700;
+  color: $accent-color-text;
+  margin: 0;
+  grid-column: 2/3;
+  text-align: right;
+
+  & span {
+    color: $accent-color-text;
+  }
+}
+
+.carousel-card__text {
+  line-height: 26px;
+  text-align: left;
+  max-width: 270px;
+  margin: 0;
+  grid-column: 1/3;
+}
+
+.carousel-card__stars {
+  grid-column: 1/2;
+  margin: 3px 0 0;
+
+  &::before {
+    background-image: url("../../icons/stack.svg#slider-star");
+    content: "";
+    display: inline-block;
+    fill: $accent-color-2;
+    width: 17px;
+    height: 18px;
+    background-size: contain;
+    background-repeat: space no-repeat;
+  }
+}
+
+.carousel-card__review {
+  font-size: 14px;
+  line-height: 24px;
+  color: $secondary-color-text-3;
+  text-align: left;
+  margin: 0;
+}
+
+.carousel-card__button {
+  text-decoration: none;
+  padding: 12px 41px;
+  margin-top: 8px;
+  border: none;
+  position: relative;
+}

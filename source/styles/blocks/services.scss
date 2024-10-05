@@ -1,0 +1,45 @@
+.services {
+  position: relative;
+
+  &::before {
+    display: inline-block;
+    position: absolute;
+    z-index: 3;
+    content: "";
+    background-image: url("../../icons/services-semicircle.svg");
+    width: 166px;
+    height: 331px;
+    color: #db6300;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    top: -20px;
+    right: 0;
+  }
+}
+
+.services__resume {
+  line-height: 26px;
+  color: $secondary-color-text;
+  text-align: center;
+  margin: 0 0 8px;
+}
+
+.services__title {
+  text-align: center;
+  margin: 0 0 14px;
+}
+
+.services__subtitle {
+  max-width: 865px;
+  text-align: center;
+  margin: 0 auto 52px;
+}
+
+.services__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}

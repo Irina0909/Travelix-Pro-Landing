@@ -1,0 +1,79 @@
+.booking-example {
+  position: relative;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: min-content min-content min-content;
+  grid-column-gap: 10px;
+  border-radius: 8%;
+  background-color: $primary-bg;
+  padding: 12px 40px 10px 15px;
+  box-shadow: 0 2px 20px 4px #a98d8d;
+  right: -40px;
+
+  &:not(:last-child) {
+    margin-bottom: 8px;
+  }
+
+  ::before {
+    background-image: url("../../icons/stack.svg#booking-example-card-icon");
+    content: "";
+    position: absolute;
+    fill: rgba(55, 147, 216, 1);
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    top: 17px;
+    right: 55%;
+  }
+}
+
+.booking-example__image {
+  display: block;
+  grid-row: 1/4;
+  margin-top: 10px;
+}
+
+.booking-example__content {
+  margin-top: 7px;
+}
+
+.booking-example__person-name {
+  font-family: $secondary-font;
+  font-size: 10px;
+  line-height: 12px;
+  color: #474a4d;
+  font-weight: 700;
+  grid-column: 2/3;
+  grid-row: 1/2;
+  margin: 13px 0 0;
+  padding: 0;
+}
+
+.booking-example__destination {
+  font-size: 8px;
+  line-height: 10px;
+  color: #8c8c8c;
+  grid-column: 2/3;
+  grid-row: 1/2;
+  margin: 0;
+  padding: 0;
+}
+
+.booking-example__stars {
+  grid-column: 2/3;
+  margin: 0;
+  padding: 0;
+
+  &::after {
+    background-image: url("../../icons/stack.svg#booking-example-card-star");
+    content: "";
+    fill: #8c8c8c;
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    background-size: contain;
+    background-repeat: space no-repeat;
+  }
+}

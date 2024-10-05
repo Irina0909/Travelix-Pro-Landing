@@ -1,0 +1,111 @@
+.example-trip {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto auto auto;
+  grid-gap: 9px, 10px;
+  border-radius: 8px;
+  position: absolute;
+  top: 63%;
+  right: 28%;
+  background-color: $primary-bg;
+  padding: 20px 31px 17px;
+  box-shadow: 0 2px 20px 4px #a98d8d;
+}
+
+.example-trip__location {
+  font-family: $secondary-font;
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 700;
+  margin: 0;
+  animation: blink 2s infinite;
+}
+
+@keyframes blink {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+.example-trip__price {
+  font-family: $secondary-font;
+  font-size: 16px;
+  line-height: 26px;
+  color: $accent-color-text;
+  font-weight: 700;
+  margin: 0;
+  text-align: right;
+}
+
+.example-trip__text {
+  font-size: 8px;
+  line-height: 18px;
+  color: $secondary-color-text;
+  margin: 0;
+  grid-column: 1/3;
+}
+
+.example-trip__stars {
+  margin: 0;
+  grid-column: 1/2;
+
+  &::before {
+    background-image: url("../../icons/stack.svg#booking-example-tour-star");
+    content: "";
+    display: inline-block;
+    fill: $accent-color-2;
+    width: 13px;
+    height: 12px;
+    background-size: 100%;
+    background-repeat: space no-repeat;
+    background-position: center;
+  }
+}
+
+.example-trip__review {
+  font-size: 14px;
+  line-height: 24px;
+  color: $secondary-color-text-3;
+  margin: 0;
+  grid-column: 2/3;
+}
+
+.example-trip__link {
+  display: block;
+  flex-wrap: wrap;
+  margin-right: auto;
+  font-family: $secondary-font;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 700;
+  color: $accent-color-text;
+  text-decoration: none;
+  padding: 0;
+  grid-column: 1/2;
+  cursor: pointer;
+  transition: 1s;
+  position: relative;
+
+  &::after {
+    mask-image: url("../../icons/stack.svg#booking-example-tour-arrow");
+    content: "";
+    display: inline-block;
+    background-color: $accent-color-2;
+    width: 37px;
+    height: 20px;
+    mask-size: contain;
+    mask-repeat: no-repeat;
+    grid-column: 1/3;
+    position: absolute;
+    top: 10%;
+    right: -45px;
+  }
+
+  &:hover {
+    opacity: 0.4;
+  }
+}

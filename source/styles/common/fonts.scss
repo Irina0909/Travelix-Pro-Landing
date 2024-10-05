@@ -1,0 +1,3 @@
+/* здесь подключите шрифты */
+@include font-face ("Inter", 400, url("../../fonts/Inter-Regular.woff2") format("woff2"));
+@include font-face ("Inter", 700, url("../../fonts/Inter-Bold.woff2") format("woff2"));

@@ -1,0 +1,107 @@
+.hero {
+  padding: 183px 0 51px;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  &::before {
+    position: absolute;
+    content: "";
+    background-image: linear-gradient(to right, rgba(255, 252, 246, 1) 0% 82%, #ffffff 82%, #ffffff 18%);
+    display: inline-block;
+    height: calc(100% + 737px);
+    inset: -737px 84% 0 0;
+    width: 84%;
+    z-index: -5;
+    background-size: auto 100%;
+    background-position: center right;
+    background-repeat: no-repeat;
+  }
+
+  &::after {
+    background-image: url("../../icons/stack.svg#hero-semicircle-1-1");
+    z-index: 10;
+    position: absolute;
+    fill: $accent-color-2;
+    display: inline-block;
+    content: "";
+    width: 103px;
+    height: 283px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    inset: 7px 0 0;
+  }
+}
+
+.hero__container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.hero__content {
+  max-width: 575px;
+  margin-right: 24px;
+}
+
+.hero__title {
+  font-family: $secondary-font;
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 80px;
+  color: $primary-color-text;
+  margin: 0 0 20px 8px;
+  padding: 0;
+
+  & span {
+    color: $accent-color-text;
+    margin: 0 0 0 3px;
+  }
+}
+
+.hero__text {
+  font-family: $secondary-font;
+  font-size: 26px;
+  font-weight: $font-weight-bold;
+  line-height: 38px;
+  color: $primary-color-text;
+  margin: 0 0 24px 8px;
+}
+
+.hero__subtitle {
+  margin: 0 0 100px;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.hero__picture {
+  width: 590px;
+  height: 655px;
+  object-fit: contain;
+  margin-right: -25px;
+  margin-top: -174px;
+  position: relative;
+
+  &::after {
+    background-image: url("../../icons/stack.svg#hero-dots");
+    content: "";
+    z-index: 10;
+    display: inline-block;
+    position: absolute;
+    fill: $accent-bg;
+    width: 145px;
+    height: 100px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    right: 15px;
+    bottom: 60px;
+  }
+}
+
+.hero__image {
+  display: block;
+}
+
+.hero__search {
+  margin-top: -100px;
+}

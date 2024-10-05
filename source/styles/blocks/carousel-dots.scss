@@ -1,0 +1,35 @@
+.carousel-dots {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  left: 44%;
+}
+
+.carousel-dots__dot {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: none;
+  background-color: $additional-color;
+  cursor: pointer;
+  transition: 2s;
+
+  &:hover {
+    background-color: #565151;
+  }
+
+  &:focus {
+    border: 2px solid #a19999;
+  }
+}
+
+.carousel-dots__dot--current {
+  width: 24px;
+  height: 24px;
+  background-color: $accent-color;
+  transform: translate(0, -2px);
+}
